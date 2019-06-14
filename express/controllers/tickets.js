@@ -14,7 +14,7 @@ const createMovie = (movie) => {
 
 // 3. create a function called deleteMovie that accepts a "movieName" param
 const deleteMovie = (movieName) => {
-    return TicketsModel.remove({movieName: movieName})
+    return TicketsModel.deleteOne({movieName: movieName})
 }
 
 // 4. create a function called getById that accepts an "id" param and finds one ticket
