@@ -28,8 +28,8 @@ router.delete('/:name', (request, response)=> {
 // Create a route for getting ONE movie by it's id
 // This corresponds to item 4 in the controller
 router.get('/:id', (request, response)=> {
-    TicketsController.findOne(request.params.id)
-        .then(()=> response.json(id))
+    TicketsController.getById(request.params.id)
+        .then((movie)=> response.json(movie))
 })
 
 module.exports = router

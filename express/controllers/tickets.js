@@ -20,7 +20,7 @@ const deleteMovie = (movieName) => {
 // 4. create a function called getById that accepts an "id" param and finds one ticket
 // hint: in your db query, you will use objectId like this: ObjectId(id)
 const getById = (id) => {
-    return TicketsModel.findOne({id})
+    return TicketsModel.findOne({_id: id})
 }
 
 
